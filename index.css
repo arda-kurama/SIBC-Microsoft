@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 8vw;
+  box-shadow: 5px 0px 5px rgb(212, 212, 212);
+}
+.navbar .icons {
+  display: flex;
+  gap: 2vw;
+}
+.navbar .icons a img {
+  width: 44px;
+  height: auto;
+  transition: transform 100ms ease-in, color 100ms ease-in;
+}
+.navbar .icons a img:hover {
+  transform: translateY(-2px) scale(1.05);
+  color: rgb(0, 0, 0);
+}
+.navbar .nav-menu {
+  display: flex;
+  gap: 3vw;
+  margin: 0.5rem;
+}
+.navbar .nav-menu .nav-item {
+  text-decoration: none;
+  position: relative;
+  color: rgb(108, 108, 108);
+  font-weight: bold;
+  font-size: 22px;
+}
+.navbar .nav-menu .nav-item::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(108, 108, 108);
+  position: absolute;
+  top: 24px;
+  left: 0px;
+}
+.navbar .nav-menu .nav-item:hover::after {
+  width: 100%;
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=index.css.map */
