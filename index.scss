@@ -1,7 +1,7 @@
-$White: rgb(255,255,255);
-$DarkGray: rgb(108,108,108);
-$Gray: rgb(212,212,212);
-$Black: rgb(0,0,0);
+$White: rgb(255, 255, 255);
+$DarkGray: rgb(108, 108, 108);
+$Gray: rgb(212, 212, 212);
+$Black: rgb(0, 0, 0);
 
 $Title: 72px;
 $Header: 36px;
@@ -10,91 +10,96 @@ $Body: 22px;
 $Mobile: 20px;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif, Helvetica, sans-serif;
-    // border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Helvetica, sans-serif;
+  border: 1px solid red;
 }
-  
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-  
+
 body {
-    background-color: $White;
+  background-color: $White;
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: $White;
+  padding: 1rem 8vw;
+  box-shadow: 5px 0px 5px $Gray;
+
+  .icons {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: $White;
-    padding: 1rem 8vw;
-    box-shadow: 5px 0px 5px $Gray;
-  
-    .icons {
-      display: flex;
-      gap: 2vw;
+    gap: 2vw;
 
-      a {
-        img {
-            width: 44px;
-            height: auto;
-            transition: transform 100ms ease-in, color 100ms ease-in;
-      
-            &:hover {
-              transform: translateY(-2px) scale(1.05);
-              color: $Black;
-            }
-      }
-  
+    a {
+      img {
+        width: 44px;
+        height: auto;
+        transition: transform 100ms ease-in, color 100ms ease-in;
 
-      }
-    }
-  
-    .nav-menu {
-      display: flex;
-      gap: 3vw;
-      margin: 0.5rem;
-  
-      .nav-item {
-        text-decoration: none;
-        position: relative;
-        color: $DarkGray;
-        font-weight: bold;
-        font-size: $Body;
-  
-        &::after {
-          content: "";
-          width: 0%;
-          height: 2px;
-          background-color: $DarkGray;
-          position: absolute;
-          top: 24px;
-          left: 0px;
-        }
-  
-        &:hover::after {
-          width: 100%;
+        &:hover {
+          transform: translateY(-2px) scale(1.05);
+          color: $Black;
         }
       }
     }
-  
-    .hamburger {
-      display: none;
-  
-      .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: $White;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 3vw;
+    margin: 0.5rem;
+
+    .nav-item {
+      text-decoration: none;
+      position: relative;
+      color: $DarkGray;
+      font-weight: bold;
+      font-size: $Body;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $DarkGray;
+        position: absolute;
+        top: 24px;
+        left: 0px;
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
+  }
+
+  .hamburger {
+    display: none;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: $White;
+    }
+  }
+}
+
+.landing {
+  .health {
+    color: $Black;
+    font-size: $Body;
+  }
 }
