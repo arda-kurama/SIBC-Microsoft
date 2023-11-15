@@ -13,8 +13,29 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: rgb(244, 250, 253);
+body .subtitle {
+  color: rgb(14, 23, 38);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+body .title {
+  color: rgb(14, 23, 38);
+  font-size: 48px;
+  font-weight: 600;
+}
+body .Header {
+  color: rgb(14, 23, 38);
+  font-size: 36px;
+  font-weight: 600;
+}
+body .body {
+  color: rgb(14, 23, 38);
+  font-size: 18px;
+  font-weight: 400;
+  width: 35vw;
+  margin: 1rem 0;
 }
 
 .navbar {
@@ -79,22 +100,23 @@ body {
 .landing {
   margin: 5vw 15vw;
 }
-.landing .subtitle {
-  color: rgb(14, 23, 38);
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 0.5rem 0;
+
+.hero {
+  display: grid;
+  grid-template-columns: 27vw 27vw;
+  grid-column-gap: 10vw;
+  grid-row-gap: 2rem;
+  background-color: rgb(244, 250, 253);
+  padding: 2rem 15vw;
 }
-.landing .title {
-  color: rgb(14, 23, 38);
-  font-size: 48px;
-  font-weight: 600;
+.hero .section .body {
+  width: 25vw;
 }
-.landing .body {
-  color: rgb(14, 23, 38);
-  font-size: 18px;
-  font-weight: 400;
-  width: 35vw;
-  margin: 1rem 0;
+.hero .section .content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(212, 212, 212);
+  border-radius: 25px;
+  width: 25vw;
+  height: 40vh;
 }/*# sourceMappingURL=index.css.map */

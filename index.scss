@@ -3,6 +3,7 @@ $DarkGray: rgb(108, 108, 108);
 $Gray: rgb(212, 212, 212);
 $Black: rgb(14, 23, 38);
 $LightBlue: rgb(244, 250, 253);
+$LightYellow: rgb(255, 227, 154);
 
 $Title: 48px;
 $Header: 36px;
@@ -28,7 +29,33 @@ html {
 }
 
 body {
-  background-color: $LightBlue;
+  .subtitle {
+    color: $Black;
+    font-size: $Subtitle;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  .title {
+    color: $Black;
+    font-size: $Title;
+    font-weight: 600;
+  }
+
+  .Header {
+    color: $Black;
+    font-size: $Header;
+    font-weight: 600;
+  }
+
+  .body {
+    color: $Black;
+    font-size: $Body;
+    font-weight: 400;
+    width: 35vw;
+    margin: 1rem 0;
+  }
 }
 
 .navbar {
@@ -105,26 +132,28 @@ body {
 
 .landing {
   margin: 5vw 15vw;
+}
 
-  .subtitle {
-    color: $Black;
-    font-size: $Subtitle;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0.5rem 0;
-  }
+.hero {
+  display: grid;
+  grid-template-columns: 27vw 27vw;
+  grid-column-gap: 10vw;
+  grid-row-gap: 2rem;
+  background-color: $LightBlue;
+  padding: 2rem 15vw;
 
-  .title {
-    color: $Black;
-    font-size: $Title;
-    font-weight: 600;
-  }
+  .section {
+    .body {
+      width: 25vw;
+    }
 
-  .body {
-    color: $Black;
-    font-size: $Body;
-    font-weight: 400;
-    width: 35vw;
-    margin: 1rem 0;
+    .content {
+      position: relative;
+      background-color: $White;
+      box-shadow: 0px 0px 5px $Gray;
+      border-radius: 25px;
+      width: 25vw;
+      height: 40vh;
+    }
   }
 }
