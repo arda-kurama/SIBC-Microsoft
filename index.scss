@@ -98,20 +98,6 @@ body {
       color: $DarkGray;
       font-weight: 600;
       font-size: $Body;
-
-      &::after {
-        content: "";
-        width: 0%;
-        height: 2px;
-        background-color: $DarkGray;
-        position: absolute;
-        top: 24px;
-        left: 0px;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
     }
   }
 
@@ -130,8 +116,40 @@ body {
   }
 }
 
+#sticky {
+  position: sticky;
+  top: 0;
+  padding: 1rem 15vw;
+
+  .nav-menu {
+    .nav-item {
+      color: $Black;
+      font-weight: 400;
+      font-size: $Subtitle;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: $Black;
+        position: absolute;
+        top: 36px;
+        left: 0px;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .landing {
-  margin: 5vw 15vw;
+  padding: 11vw 15vw;
+  background-image: url("Main_Background.jpg");
+  background-position: 0 70%;
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
 
 .hero {

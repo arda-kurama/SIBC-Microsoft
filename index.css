@@ -73,18 +73,6 @@ body .body {
   font-weight: 600;
   font-size: 18px;
 }
-.navbar .nav-menu .nav-item::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: rgb(108, 108, 108);
-  position: absolute;
-  top: 24px;
-  left: 0px;
-}
-.navbar .nav-menu .nav-item:hover::after {
-  width: 100%;
-}
 .navbar .hamburger {
   display: none;
 }
@@ -97,8 +85,35 @@ body .body {
   background-color: rgb(255, 255, 255);
 }
 
+#sticky {
+  position: sticky;
+  top: 0;
+  padding: 1rem 15vw;
+}
+#sticky .nav-menu .nav-item {
+  color: rgb(14, 23, 38);
+  font-weight: 400;
+  font-size: 14px;
+}
+#sticky .nav-menu .nav-item::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(14, 23, 38);
+  position: absolute;
+  top: 36px;
+  left: 0px;
+}
+#sticky .nav-menu .nav-item:hover::after {
+  width: 100%;
+}
+
 .landing {
-  margin: 5vw 15vw;
+  padding: 11vw 15vw;
+  background-image: url("Main_Background.jpg");
+  background-position: 0 70%;
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
 
 .hero {
