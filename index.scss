@@ -89,7 +89,7 @@ body {
 
   .nav-menu {
     display: flex;
-    gap: 3vw;
+    gap: 1vw;
     margin: 0 0.4rem 0.25rem;
 
     .nav-item {
@@ -98,6 +98,10 @@ body {
       color: $DarkGray;
       font-weight: 600;
       font-size: $Body;
+    }
+
+    #black {
+      color: $Black;
     }
   }
 
@@ -122,6 +126,8 @@ body {
   padding: 1rem 15vw;
 
   .nav-menu {
+    gap: 3vw;
+
     .nav-item {
       color: $Black;
       font-weight: 400;

@@ -63,7 +63,7 @@ body .body {
 }
 .navbar .nav-menu {
   display: flex;
-  gap: 3vw;
+  gap: 1vw;
   margin: 0 0.4rem 0.25rem;
 }
 .navbar .nav-menu .nav-item {
@@ -72,6 +72,9 @@ body .body {
   color: rgb(108, 108, 108);
   font-weight: 600;
   font-size: 18px;
+}
+.navbar .nav-menu #black {
+  color: rgb(14, 23, 38);
 }
 .navbar .hamburger {
   display: none;
@@ -89,6 +92,9 @@ body .body {
   position: sticky;
   top: 0;
   padding: 1rem 15vw;
+}
+#sticky .nav-menu {
+  gap: 3vw;
 }
 #sticky .nav-menu .nav-item {
   color: rgb(14, 23, 38);
