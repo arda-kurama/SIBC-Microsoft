@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   src: url(segoe-ui-4-cufonfonts/Segoe\ UI.ttf);
@@ -25,14 +26,14 @@ body .title {
   font-size: 48px;
   font-weight: 600;
 }
-body .Header {
+body .header {
   color: rgb(14, 23, 38);
   font-size: 36px;
   font-weight: 600;
 }
 body .body {
   color: rgb(14, 23, 38);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   width: 35vw;
   margin: 1rem 0;
@@ -71,7 +72,7 @@ body .body {
   position: relative;
   color: rgb(108, 108, 108);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar .nav-menu #black {
   color: rgb(14, 23, 38);
@@ -123,21 +124,74 @@ body .body {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 27vw 27vw;
-  grid-column-gap: 10vw;
-  grid-row-gap: 2rem;
   background-color: rgb(244, 250, 253);
-  padding: 2rem 15vw;
+  padding: 4rem 15vw;
 }
-.hero .section .body {
+.hero .section {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .section .text .accordion {
+  cursor: pointer;
+  background-color: rgb(244, 250, 253);
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 2vw 0 0 2vw;
+}
+.hero .section .text .accordion:after {
+  content: "⌵";
+  font-size: 16px;
+  margin: auto 0.5rem;
+  display: inline-block;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.hero .section .text .panel {
   width: 25vw;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+  padding: 1vw 0 1vw 2vw;
+  border-left: 3px solid rgb(14, 23, 38);
+}
+.hero .section .active:after {
+  transform: rotate(-180deg);
+  transition: 0.5s;
 }
 .hero .section .content {
   position: relative;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 5px rgb(212, 212, 212);
   border-radius: 25px;
-  width: 25vw;
-  height: 40vh;
+  top: 4vw;
+  width: 40vw;
+  height: 50vh;
+}
+.hero #column {
+  display: block;
+  margin: 12vw 0 1vw;
+  text-align: center;
+}
+.hero #column .text {
+  margin-bottom: 2vw;
+}
+.hero #column .text .subtitle {
+  margin: 0;
+}
+.hero #column .text .body {
+  margin: 0 auto;
+}
+.hero #column .images {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero #column .images .content {
+  gap: 10vw;
+  position: relative;
+  top: 0;
+  width: 20vw;
 }/*# sourceMappingURL=index.css.map */

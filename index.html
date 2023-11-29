@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="hamburger.js" defer></script>
+    <script src="accordion.js" defer></script>
   </head>
   <body>
     <div class="navbar">
@@ -40,9 +41,8 @@
     <div class="navbar" id="sticky">
       <div class="nav-menu">
         <a class="nav-item" href="#">Input Information</a>
-        <a class="nav-item" href="#">Produce Visuals</a>
-        <a class="nav-item" href="#">List Tasks</a>
-        <a class="nav-item" href="#">Produce Schedule</a>
+        <a class="nav-item" href="#">Create Visuals</a>
+        <a class="nav-item" href="#">Be Productive.</a>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -52,43 +52,41 @@
     </div>
     <div class="hero">
       <div class="section">
-        <div class="subtitle">How it Works</div>
-        <div class="Header">1. Input Basic Information</div>
-        <div class="body">
-          Productivity provides individualized reccomendations based on personal
-          eating and sleep cycles.
-        </div>
-        <div class="content"></div>
-      </div>
-      <div class="section">
-        <div class="subtitle">With the help of AI</div>
-        <div class="Header">2. Produces Visuals</div>
-        <div class="body">
-          By comparing your health data to millions of others, boosts in energy
-          and productivity can be located.
-        </div>
-        <div class="content"></div>
-      </div>
-      <div class="section">
-        <div class="section">
-          <div class="subtitle">Integrated Calendar</div>
-          <div class="Header">3. List Tasks to Complete</div>
-          <div class="body">
-            List all of the tasks in your week and let Productivity decide how
-            and when to best complete each task.
+        <div class="text">
+          <div class="subtitle">Input Information</div>
+          <div class="header">Help maximize your everyday</div>
+          <button class="accordion">Protect what's important</button>
+          <div class="body panel">
+            Productivity provides individualized reccomendations based on
+            personal eating and sleep cycles.
           </div>
         </div>
         <div class="content"></div>
       </div>
-      <div class="section">
+      <div class="section" id="column">
+        <div class="text">
+          <div class="subtitle">Create Visuals</div>
+          <div class="header">With the help of AI</div>
+          <div class="body">
+            By comparing your health data to millions of others, boosts in
+            energy and productivity can be located.
+          </div>
+        </div>
+        <div class="images">
+          <div class="content"></div>
+          <div class="content"></div>
+          <div class="content"></div>
+        </div>
+      </div>
+      <!-- <div class="section">
         <div class="subtitle">With the help of AI</div>
-        <div class="Header">4. Produce Schedule</div>
+        <div class="header">4. Produce Schedule</div>
         <div class="body">
           Productivity produces a schedule taking your health and tasks into
           account.
         </div>
         <div class="content"></div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

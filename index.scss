@@ -7,9 +7,9 @@ $LightYellow: rgb(255, 227, 154);
 
 $Title: 48px;
 $Header: 36px;
+$Accordion: 18px;
 $Subtitle: 14px;
-$Body: 18px;
-$Mobile: 20px;
+$Body: 16px;
 
 @font-face {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +43,7 @@ body {
     font-weight: 600;
   }
 
-  .Header {
+  .header {
     color: $Black;
     font-size: $Header;
     font-weight: 600;
@@ -59,7 +59,6 @@ body {
 }
 
 .navbar {
-  // position: fixed;
   width: 100%;
   z-index: 10;
   display: flex;
@@ -159,16 +158,48 @@ body {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 27vw 27vw;
-  grid-column-gap: 10vw;
-  grid-row-gap: 2rem;
   background-color: $LightBlue;
-  padding: 2rem 15vw;
+  padding: 4rem 15vw;
 
   .section {
-    .body {
-      width: 25vw;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      .accordion {
+        cursor: pointer;
+        background-color: $LightBlue;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        font-weight: 500;
+        font-size: $Accordion;
+        padding: 2vw 0 0 2vw;
+      }
+
+      .accordion:after {
+        content: "\2335";
+        font-size: $Body;
+        margin: auto 0.5rem;
+        display: inline-block;
+        font-weight: 500;
+        transition: 0.5s;
+      }
+
+      .panel {
+        width: 25vw;
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-out;
+        padding: 1vw 0 1vw 2vw;
+        border-left: 3px solid $Black;
+      }
+    }
+
+    .active:after {
+      transform: rotate(-180deg);
+      transition: 0.5s;
     }
 
     .content {
@@ -176,8 +207,39 @@ body {
       background-color: $White;
       box-shadow: 0px 0px 5px $Gray;
       border-radius: 25px;
-      width: 25vw;
-      height: 40vh;
+      top: 4vw;
+      width: 40vw;
+      height: 50vh;
+    }
+  }
+
+  #column {
+    display: block;
+    margin: 12vw 0 1vw;
+    text-align: center;
+
+    .text {
+      margin-bottom: 2vw;
+
+      .subtitle {
+        margin: 0;
+      }
+
+      .body {
+        margin: 0 auto;
+      }
+    }
+
+    .images {
+      display: flex;
+      justify-content: space-evenly;
+
+      .content {
+        gap: 10vw;
+        position: relative;
+        top: 0;
+        width: 20vw;
+      }
     }
   }
 }
