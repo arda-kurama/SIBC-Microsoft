@@ -130,6 +130,12 @@ body .body {
   position: relative;
   visibility: hidden;
 }
+.hero #section1 {
+  top: -25vh;
+}
+.hero #section2 {
+  top: 17vh;
+}
 .hero .section {
   display: flex;
   justify-content: space-between;
