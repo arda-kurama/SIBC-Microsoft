@@ -35,7 +35,6 @@ body .body {
   color: rgb(14, 23, 38);
   font-size: 16px;
   font-weight: 400;
-  width: 35vw;
   margin: 1rem 0;
 }
 
@@ -122,6 +121,9 @@ body .body {
   background-size: cover;
   background-blend-mode: soft-light;
 }
+.landing .body {
+  width: 35vw;
+}
 
 .hero {
   background-color: rgb(244, 250, 253);
@@ -150,13 +152,13 @@ body .body {
   transition: 0.5s;
 }
 .hero .section .text .panel {
-  width: 25vw;
   display: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.8s ease-out;
   padding: 1vw 0 1vw 2vw;
   border-left: 3px solid rgb(14, 23, 38);
+  width: 25vw;
 }
 .hero .section .active:after {
   transform: rotate(-180deg);
@@ -173,17 +175,18 @@ body .body {
 }
 .hero #column {
   display: block;
-  margin: 12vw 0 1vw;
+  margin: 16vw 0;
   text-align: center;
 }
 .hero #column .text {
   margin-bottom: 2vw;
+  margin: 0 auto;
 }
 .hero #column .text .subtitle {
   margin: 0;
 }
 .hero #column .text .body {
-  margin: 0 auto;
+  margin: 0 auto 2vw;
 }
 .hero #column .images {
   display: flex;
@@ -194,4 +197,15 @@ body .body {
   position: relative;
   top: 0;
   width: 20vw;
+}
+.hero #right {
+  margin: 14vw 0 4vw;
+  justify-content: space-around;
+}
+.hero #right .content {
+  top: 0;
+}
+.hero #right .text {
+  width: 25vw;
+  margin: auto 0;
 }/*# sourceMappingURL=index.css.map */

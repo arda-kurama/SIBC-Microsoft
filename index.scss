@@ -53,7 +53,6 @@ body {
     color: $Black;
     font-size: $Body;
     font-weight: 400;
-    width: 35vw;
     margin: 1rem 0;
   }
 }
@@ -155,6 +154,10 @@ body {
   background-position: 0 70%;
   background-size: cover;
   background-blend-mode: soft-light;
+
+  .body {
+    width: 35vw;
+  }
 }
 
 .hero {
@@ -187,13 +190,13 @@ body {
       }
 
       .panel {
-        width: 25vw;
         display: none;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.8s ease-out;
         padding: 1vw 0 1vw 2vw;
         border-left: 3px solid $Black;
+        width: 25vw;
       }
     }
 
@@ -215,18 +218,19 @@ body {
 
   #column {
     display: block;
-    margin: 12vw 0 1vw;
+    margin: 16vw 0;
     text-align: center;
 
     .text {
       margin-bottom: 2vw;
+      margin: 0 auto;
 
       .subtitle {
         margin: 0;
       }
 
       .body {
-        margin: 0 auto;
+        margin: 0 auto 2vw;
       }
     }
 
@@ -240,6 +244,20 @@ body {
         top: 0;
         width: 20vw;
       }
+    }
+  }
+
+  #right {
+    margin: 14vw 0 4vw;
+    justify-content: space-around;
+
+    .content {
+      top: 0;
+    }
+
+    .text {
+      width: 25vw;
+      margin: auto 0;
     }
   }
 }
