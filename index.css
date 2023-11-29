@@ -14,6 +14,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: rgb(244, 250, 253);
+}
 body .subtitle {
   color: rgb(14, 23, 38);
   font-size: 14px;
@@ -122,7 +125,6 @@ body .body {
 }
 
 .hero {
-  background-color: rgb(244, 250, 253);
   padding: 4rem 0;
 }
 .hero .anchor {
@@ -239,4 +241,11 @@ body .body {
 .hero #right .text {
   width: 25vw;
   margin: auto 0;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(212, 212, 212);
+  font-weight: 300;
+  margin: 0 0 0.5vw 0;
 }/*# sourceMappingURL=index.css.map */

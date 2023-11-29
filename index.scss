@@ -29,6 +29,8 @@ html {
 }
 
 body {
+  background-color: $LightBlue;
+
   .subtitle {
     color: $Black;
     font-size: $Subtitle;
@@ -156,7 +158,6 @@ body {
 }
 
 .hero {
-  background-color: $LightBlue;
   padding: 4rem 0;
 
   .anchor {
@@ -294,4 +295,11 @@ body {
       margin: auto 0;
     }
   }
+}
+
+.footer {
+  text-align: center;
+  color: $Gray;
+  font-weight: 300;
+  margin: 0 0 0.5vw 0;
 }
