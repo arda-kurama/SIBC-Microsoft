@@ -162,11 +162,13 @@ body {
 
 .hero {
   background-color: $LightBlue;
-  padding: 4rem 15vw;
+  padding: 4rem 0;
 
   .section {
     display: flex;
     justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
 
     .text {
       display: flex;
@@ -181,6 +183,8 @@ body {
         font-weight: 500;
         font-size: $Accordion;
         padding: 2vw 0 0 2vw;
+        width: 30vw;
+        text-align: left;
       }
 
       .accordion:after {
@@ -221,7 +225,7 @@ body {
 
   #column {
     display: block;
-    margin: 16vw 0;
+    margin: 16vw auto;
     text-align: center;
 
     .text {
@@ -252,7 +256,7 @@ body {
   }
 
   #right {
-    margin: 14vw 0 4vw;
+    margin: 14vw auto 4vw;
     justify-content: space-around;
 
     .content {

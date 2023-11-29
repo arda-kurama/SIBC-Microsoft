@@ -127,11 +127,13 @@ body .body {
 
 .hero {
   background-color: rgb(244, 250, 253);
-  padding: 4rem 15vw;
+  padding: 4rem 0;
 }
 .hero .section {
   display: flex;
   justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
 }
 .hero .section .text {
   display: flex;
@@ -146,6 +148,8 @@ body .body {
   font-weight: 500;
   font-size: 18px;
   padding: 2vw 0 0 2vw;
+  width: 30vw;
+  text-align: left;
 }
 .hero .section .text .accordion:after {
   content: "⌵";
@@ -179,7 +183,7 @@ body .body {
 }
 .hero #column {
   display: block;
-  margin: 16vw 0;
+  margin: 16vw auto;
   text-align: center;
 }
 .hero #column .text {
@@ -204,7 +208,7 @@ body .body {
   width: 20vw;
 }
 .hero #right {
-  margin: 14vw 0 4vw;
+  margin: 14vw auto 4vw;
   justify-content: space-around;
 }
 .hero #right .content {
