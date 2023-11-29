@@ -87,7 +87,7 @@ body .body {
 #sticky {
   position: sticky;
   top: 0;
-  padding: 1rem 15vw;
+  padding: 1rem 7.5vw;
 }
 #sticky .nav-menu {
   gap: 3vw;
@@ -111,7 +111,7 @@ body .body {
 }
 
 .landing {
-  padding: 11vw 15vw;
+  padding: 11vw 7.5vw;
   background-image: url("Main_Background.jpg");
   background-position: 0 70%;
   background-size: cover;
@@ -131,15 +131,15 @@ body .body {
   visibility: hidden;
 }
 .hero #section1 {
-  top: -25vh;
+  top: -15vh;
 }
 .hero #section2 {
-  top: 17vh;
+  top: 21vh;
 }
 .hero .section {
   display: flex;
   justify-content: space-between;
-  width: 70vw;
+  width: 85vw;
   margin: 0 auto;
 }
 .hero .section .text {
@@ -185,8 +185,20 @@ body .body {
   box-shadow: 0px 0px 5px rgb(212, 212, 212);
   border-radius: 25px;
   top: 4vw;
-  width: 40vw;
-  height: 50vh;
+  width: 50vw;
+  height: 60vh;
+  background-image: url("Windows_Background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .section .content img {
+  width: 30vw;
+  height: auto;
+  box-shadow: 0px 0px 5px rgb(14, 23, 38);
+  border-radius: 5px;
 }
 .hero #column {
   display: block;
@@ -215,11 +227,14 @@ body .body {
   width: 20vw;
 }
 .hero #right {
-  margin: 14vw auto 4vw;
+  margin: 0 auto 4vw;
   justify-content: space-around;
 }
 .hero #right .content {
   top: 0;
+}
+.hero #right .content img {
+  width: 40vw;
 }
 .hero #right .text {
   width: 25vw;

@@ -116,7 +116,7 @@ body {
 #sticky {
   position: sticky;
   top: 0;
-  padding: 1rem 15vw;
+  padding: 1rem 7.5vw;
 
   .nav-menu {
     gap: 3vw;
@@ -144,7 +144,7 @@ body {
 }
 
 .landing {
-  padding: 11vw 15vw;
+  padding: 11vw 7.5vw;
   background-image: url("Main_Background.jpg");
   background-position: 0 70%;
   background-size: cover;
@@ -166,17 +166,17 @@ body {
   }
 
   #section1 {
-    top: -25vh;
+    top: -15vh;
   }
 
   #section2 {
-    top: 17vh;
+    top: 21vh;
   }
 
   .section {
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    width: 85vw;
     margin: 0 auto;
 
     .text {
@@ -227,8 +227,21 @@ body {
       box-shadow: 0px 0px 5px $Gray;
       border-radius: 25px;
       top: 4vw;
-      width: 40vw;
-      height: 50vh;
+      width: 50vw;
+      height: 60vh;
+      background-image: url("Windows_Background.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 30vw;
+        height: auto;
+        box-shadow: 0px 0px 5px $Black;
+        border-radius: 5px;
+      }
     }
   }
 
@@ -265,11 +278,15 @@ body {
   }
 
   #right {
-    margin: 14vw auto 4vw;
+    margin: 0 auto 4vw;
     justify-content: space-around;
 
     .content {
       top: 0;
+
+      img {
+        width: 40vw;
+      }
     }
 
     .text {
