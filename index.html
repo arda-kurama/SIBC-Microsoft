@@ -11,6 +11,8 @@
     ></script>
     <script src="hamburger.js" defer></script>
     <script src="accordion.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollreveal.js" defer></script>
   </head>
   <body>
     <div class="navbar">
@@ -20,9 +22,20 @@
         </a>
       </div>
       <div class="nav-menu">
-        <a class="nav-item" href="#">Microsoft</a>
+        <a
+          class="nav-item"
+          target="_blank"
+          href="https://www.microsoft.com/en-us/"
+          >Microsoft</a
+        >
         <div class="nav-item" id="black">|</div>
-        <a class="nav-item" id="black" href="#">Microsoft AI</a>
+        <a
+          class="nav-item"
+          id="black"
+          target="_blank"
+          href="https://www.microsoft.com/en-us/ai"
+          >Microsoft AI</a
+        >
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -40,9 +53,9 @@
     </div>
     <div class="navbar" id="sticky">
       <div class="nav-menu">
-        <a class="nav-item" href="#">Input Information</a>
-        <a class="nav-item" href="#">Create Visuals</a>
-        <a class="nav-item" href="#">Be Productive.</a>
+        <a class="nav-item" href="#section1">Input Information</a>
+        <a class="nav-item" href="#section2">Create Visuals</a>
+        <a class="nav-item" href="#section3">Be Productive.</a>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -51,6 +64,7 @@
       </div>
     </div>
     <div class="hero">
+      <a class="anchor" id="section1"></a>
       <div class="section">
         <div class="text">
           <div class="subtitle">Input Information</div>
@@ -73,6 +87,7 @@
         </div>
         <div class="content"></div>
       </div>
+      <a class="anchor" id="section2"></a>
       <div class="section" id="column">
         <div class="text">
           <div class="subtitle">Create Visuals</div>
@@ -88,6 +103,7 @@
           <div class="content"></div>
         </div>
       </div>
+      <a class="anchor" id="section3"></a>
       <div class="section" id="right">
         <div class="content"></div>
         <div class="text">

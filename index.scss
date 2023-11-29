@@ -76,11 +76,6 @@ body {
         width: 25px;
         height: auto;
         transition: transform 100ms ease-in, color 100ms ease-in;
-
-        &:hover {
-          transform: translateY(-2px) scale(1.05);
-          color: $Black;
-        }
       }
     }
   }
@@ -88,14 +83,14 @@ body {
   .nav-menu {
     display: flex;
     gap: 1vw;
-    margin: 0 0.4rem 0.25rem;
+    margin: 0 0.5rem 0.3rem;
 
     .nav-item {
       text-decoration: none;
       position: relative;
       color: $DarkGray;
       font-weight: 600;
-      font-size: $Body;
+      font-size: $Accordion;
     }
 
     #black {
@@ -163,6 +158,13 @@ body {
 .hero {
   background-color: $LightBlue;
   padding: 4rem 0;
+
+  .anchor {
+    display: block;
+    position: relative;
+    // top: -50px;
+    visibility: hidden;
+  }
 
   .section {
     display: flex;

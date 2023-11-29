@@ -57,21 +57,17 @@ body .body {
   height: auto;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.navbar .icons a img:hover {
-  transform: translateY(-2px) scale(1.05);
-  color: rgb(14, 23, 38);
-}
 .navbar .nav-menu {
   display: flex;
   gap: 1vw;
-  margin: 0 0.4rem 0.25rem;
+  margin: 0 0.5rem 0.3rem;
 }
 .navbar .nav-menu .nav-item {
   text-decoration: none;
   position: relative;
   color: rgb(108, 108, 108);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 .navbar .nav-menu #black {
   color: rgb(14, 23, 38);
@@ -128,6 +124,11 @@ body .body {
 .hero {
   background-color: rgb(244, 250, 253);
   padding: 4rem 0;
+}
+.hero .anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
 }
 .hero .section {
   display: flex;
