@@ -20,6 +20,10 @@
         gallery: "#my-gallery",
         children: "a",
         pswpModule: () => import("./photoswipe/photoswipe.esm.js"),
+
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: 1.5,
+        maxZoomLevel: 1,
       });
       lightbox.init();
     </script>
