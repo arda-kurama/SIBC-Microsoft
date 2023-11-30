@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mockup</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photoswipe/photoswipe.css" />
     <script
       src="https://kit.fontawesome.com/d474549b5b.js"
       crossorigin="anonymous"
@@ -13,6 +14,15 @@
     <script src="accordion.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scrollreveal.js" defer></script>
+    <script type="module">
+      import PhotoSwipeLightbox from "/photoswipe/photoswipe-lightbox.esm.js";
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: () => import("/photoswipe/photoswipe.esm.js"),
+      });
+      lightbox.init();
+    </script>
   </head>
   <body>
     <div class="navbar">
@@ -85,8 +95,14 @@
             information.
           </div>
         </div>
-        <div class="content">
-          <img src="Section1_Content.png" alt="Section1_Content" />
+        <div class="content" id="my-gallery">
+          <a
+            href="Section1_Content.png"
+            data-pswp-width="1000"
+            data-pswp-height="750"
+          >
+            <img src="Section1_Content.png" alt="Section1_Content" />
+          </a>
         </div>
       </div>
       <a class="anchor" id="section2"></a>
