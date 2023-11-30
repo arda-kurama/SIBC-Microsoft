@@ -14,12 +14,12 @@
     <script src="accordion.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scrollreveal.js" defer></script>
-    <script type="module" defer>
-      import PhotoSwipeLightbox from "/photoswipe/photoswipe-lightbox.esm.js";
+    <script type="module">
+      import PhotoSwipeLightbox from "../photoswipe/photoswipe-lightbox.esm.js";
       const lightbox = new PhotoSwipeLightbox({
         gallery: "#my-gallery",
         children: "a",
-        pswpModule: () => import("/photoswipe/photoswipe.esm.js"),
+        pswpModule: () => import("../photoswipe/photoswipe.esm.js"),
       });
       lightbox.init();
     </script>
