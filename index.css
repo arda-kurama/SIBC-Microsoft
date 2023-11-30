@@ -228,6 +228,9 @@ body .body {
   top: 0;
   width: 20vw;
 }
+.hero #column .images .content img {
+  width: 14vw;
+}
 .hero #right {
   margin: 0 auto 4vw;
   justify-content: space-around;
