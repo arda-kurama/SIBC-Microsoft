@@ -66,7 +66,7 @@ body {
   justify-content: left;
   align-items: center;
   background-color: $White;
-  padding: 1rem 8vw;
+  padding: 1rem 6vw;
   box-shadow: 5px 0px 5px $Gray;
 
   .icons {
@@ -118,10 +118,12 @@ body {
 #sticky {
   position: sticky;
   top: 0;
-  padding: 1rem 7.5vw;
+  padding: 1rem 0;
 
   .nav-menu {
     gap: 3vw;
+    width: clamp(70vw, 1344px, 85vw);
+    margin: 0 auto;
 
     .nav-item {
       color: $Black;
@@ -146,14 +148,19 @@ body {
 }
 
 .landing {
-  padding: 11vw 7.5vw;
+  padding: 11vw 0;
   background-image: url("Main_Background.jpg");
   background-position: 0 70%;
   background-size: cover;
   background-blend-mode: soft-light;
 
-  .body {
-    width: 35vw;
+  .content {
+    width: clamp(70vw, 1344px, 85vw);
+    margin: 0 auto;
+
+    .body {
+      width: clamp(450px, 35vw, 672px);
+    }
   }
 }
 
@@ -177,7 +184,7 @@ body {
   .section {
     display: flex;
     justify-content: space-between;
-    width: 85vw;
+    width: clamp(70vw, 1344px, 85vw);
     margin: 0 auto;
 
     .text {
@@ -193,7 +200,7 @@ body {
         font-weight: 500;
         font-size: $Accordion;
         padding: 2vw 0 0 2vw;
-        width: 30vw;
+        width: 28vw;
         text-align: left;
       }
 
@@ -213,7 +220,7 @@ body {
         transition: max-height 0.8s ease-out;
         padding: 1vw 0 1vw 2vw;
         border-left: 3px solid $Black;
-        width: 25vw;
+        width: 30vw;
       }
     }
 
@@ -229,7 +236,7 @@ body {
       border-radius: 25px;
       top: 4vw;
       width: 50vw;
-      height: 60vh;
+      height: 30vw;
       background-image: url("Windows_Background.jpg");
       background-position: center;
       background-size: cover;
@@ -288,15 +295,16 @@ body {
 
     .content {
       top: 0;
+      width: 60vw;
+      height: 25vw;
 
       img {
-        width: 40vw;
+        width: 32vw;
       }
     }
 
     .text {
-      width: 25vw;
-      margin: auto 0;
+      margin: auto 2vw;
     }
   }
 }
