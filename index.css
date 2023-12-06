@@ -138,10 +138,10 @@ body .body {
   position: relative;
   visibility: hidden;
 }
-.hero #section1 {
+.hero #Input_Information {
   top: -15vh;
 }
-.hero #section2 {
+.hero #Create_Visuals {
   top: 21vh;
 }
 .hero .section {
@@ -229,7 +229,6 @@ body .body {
   justify-content: space-evenly;
 }
 .hero #column .images .content {
-  gap: 10vw;
   position: relative;
   top: 0;
   width: 20vw;
@@ -258,4 +257,54 @@ body .body {
   color: rgb(212, 212, 212);
   font-weight: 300;
   margin: 0 0 0.5vw 0;
+}
+
+@media (max-width: 1280px) {
+  .hero .section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+  .hero .section .content {
+    width: 640px;
+    height: 384px;
+  }
+  .hero .section .content img {
+    width: 384px;
+  }
+  .hero .section .text {
+    margin-bottom: 2vw;
+  }
+  .hero .section .text .accordion {
+    width: 40vw;
+  }
+  .hero .section .text .panel {
+    width: 45vw;
+  }
+  .hero .section .content {
+    top: 0;
+  }
+  .hero #column .images {
+    justify-content: space-between;
+    gap: 1vw;
+  }
+  .hero #column .images .content {
+    width: clamp(100px, 30vw, 256px);
+  }
+  .hero #column .images .content img {
+    width: 180px;
+  }
+  .hero #right {
+    flex-direction: column-reverse;
+  }
+  .hero #right .content {
+    width: 640px;
+    height: 320px;
+  }
+  .hero #right .content img {
+    width: 448px;
+  }
+  .hero #right .text .body {
+    margin-bottom: 1vw;
+  }
 }/*# sourceMappingURL=index.css.map */

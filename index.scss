@@ -173,11 +173,11 @@ body {
     visibility: hidden;
   }
 
-  #section1 {
+  #Input_Information {
     top: -15vh;
   }
 
-  #section2 {
+  #Create_Visuals {
     top: 21vh;
   }
 
@@ -277,7 +277,6 @@ body {
       justify-content: space-evenly;
 
       .content {
-        gap: 10vw;
         position: relative;
         top: 0;
         width: 20vw;
@@ -314,4 +313,73 @@ body {
   color: $Gray;
   font-weight: 300;
   margin: 0 0 0.5vw 0;
+}
+
+@media (max-width: 1280px) {
+  .hero {
+    .section {
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
+
+      .content {
+        width: 640px;
+        height: 384px;
+
+        img {
+          width: 384px;
+        }
+      }
+
+      .text {
+        margin-bottom: 2vw;
+
+        .accordion {
+          width: 40vw;
+        }
+
+        .panel {
+          width: 45vw;
+        }
+      }
+
+      .content {
+        top: 0;
+      }
+    }
+
+    #column {
+      .images {
+        justify-content: space-between;
+        gap: 1vw;
+
+        .content {
+          width: clamp(100px, 30vw, 256px);
+
+          img {
+            width: 180px;
+          }
+        }
+      }
+    }
+
+    #right {
+      flex-direction: column-reverse;
+
+      .content {
+        width: 640px;
+        height: 320px;
+
+        img {
+          width: 448px;
+        }
+      }
+
+      .text {
+        .body {
+          margin-bottom: 1vw;
+        }
+      }
+    }
+  }
 }
