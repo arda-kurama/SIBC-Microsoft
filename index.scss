@@ -12,7 +12,7 @@ $Subtitle: 14px;
 $Body: 16px;
 
 @font-face {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   src: url(segoe-ui-4-cufonfonts/Segoe\ UI.ttf);
 }
 
@@ -178,7 +178,7 @@ body {
   }
 
   #Create_Visuals {
-    top: 21vh;
+    top: 23vh;
   }
 
   .section {
@@ -202,6 +202,7 @@ body {
         padding: 2vw 0 0 2vw;
         width: 28vw;
         text-align: left;
+        text-decoration: none;
       }
 
       .accordion:after {
@@ -317,6 +318,14 @@ body {
 
 @media (max-width: 1280px) {
   .hero {
+    #Input_Information {
+      top: -10vh;
+    }
+
+    #Create_Visuals {
+      top: 14vh;
+    }
+
     .section {
       flex-direction: column;
       align-items: center;
@@ -462,6 +471,19 @@ body {
 
   .hero {
     padding: 2rem 0;
+
+    #Input_Information {
+      top: -9vh;
+    }
+
+    #Create_Visuals {
+      top: 3vh;
+    }
+
+    #Be_Productive {
+      top: -10vh;
+    }
+
     .section {
       .content {
         width: 80vw;
@@ -518,6 +540,9 @@ body {
   }
 
   .hero {
+    #Create_Visuals {
+      top: 0;
+    }
     .section {
       .content {
         width: 80vw;
