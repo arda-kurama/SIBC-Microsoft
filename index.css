@@ -276,10 +276,10 @@ body .body {
     margin-bottom: 2vw;
   }
   .hero .section .text .accordion {
-    width: 40vw;
+    width: clamp(360px, 40vw, 480px);
   }
   .hero .section .text .panel {
-    width: 45vw;
+    width: clamp(360px, 45vw, 768px);
   }
   .hero .section .content {
     top: 0;
@@ -355,5 +355,49 @@ body .body {
     bottom: 72px;
     transform: rotate(-180deg);
     transition: 0.5s;
+  }
+  .landing {
+    padding: 40vw 0 0;
+    background-position: center;
+  }
+  .landing .content {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 2vw 8vw;
+    box-shadow: 5px 0px 5px rgb(212, 212, 212);
+  }
+  .landing .content .body {
+    width: 80vw;
+  }
+  .hero {
+    padding: 2rem 0;
+  }
+  .hero .section .content {
+    width: 80vw;
+    height: 50vh;
+  }
+  .hero .section .content img {
+    width: clamp(300px, 70vw, 400px);
+  }
+  .hero .section .text .accordion {
+    margin-top: 2vw;
+  }
+  .hero #column .images {
+    justify-content: center;
+  }
+  .hero #column .images .content {
+    margin-top: 2vw;
+    width: 30vw;
+    height: 50vw;
+  }
+  .hero #column .images .content img {
+    width: 25vw;
+  }
+  .hero #right .content {
+    width: 80vw;
+    height: 60vw;
+  }
+  .hero #right .content img {
+    width: 70vw;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -335,11 +335,11 @@ body {
         margin-bottom: 2vw;
 
         .accordion {
-          width: 40vw;
+          width: clamp(360px, 40vw, 480px);
         }
 
         .panel {
-          width: 45vw;
+          width: clamp(360px, 45vw, 768px);
         }
       }
 
@@ -441,6 +441,69 @@ body {
       bottom: 72px;
       transform: rotate(-180deg);
       transition: 0.5s;
+    }
+  }
+
+  .landing {
+    padding: 40vw 0 0;
+    background-position: center;
+
+    .content {
+      background-color: $White;
+      width: 100%;
+      padding: 2vw 8vw;
+      box-shadow: 5px 0px 5px $Gray;
+
+      .body {
+        width: 80vw;
+      }
+    }
+  }
+
+  .hero {
+    padding: 2rem 0;
+    .section {
+      .content {
+        width: 80vw;
+        height: 50vh;
+
+        img {
+          width: clamp(300px, 70vw, 400px);
+        }
+      }
+
+      .text {
+        .accordion {
+          margin-top: 2vw;
+        }
+      }
+    }
+
+    #column {
+      .images {
+        justify-content: center;
+
+        .content {
+          margin-top: 2vw;
+          width: 30vw;
+          height: 50vw;
+
+          img {
+            width: 25vw;
+          }
+        }
+      }
+    }
+
+    #right {
+      .content {
+        width: 80vw;
+        height: 60vw;
+
+        img {
+          width: 70vw;
+        }
+      }
     }
   }
 }
